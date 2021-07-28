@@ -1,10 +1,3 @@
-main(); // Appel de fonction quand le fichier est chargé
-
-// fonction appelé quand le fichier est chargé
-function main() {
-  getArticles();
-}
-
 // Récupérer les articles depuis l'API
 function getArticles() {
   fetch("http://localhost:3000/api/teddies")
@@ -31,7 +24,7 @@ function getArticles() {
         //création de la <div> pour une carte
         let productCard = document.createElement("div");
         document.querySelector(".card_container").appendChild(productCard);
-        productCard.classList.add("produitNounours");
+        productCard.classList.add("product_card");
 
         // lien cliquable de la carte
         let lienNounours = document.createElement("a");
@@ -74,3 +67,10 @@ function getArticles() {
       }
     });
 }
+
+// fonction appelé quand le fichier est chargé
+function main() {
+  getArticles();
+}
+
+main(); // Appel de fonction quand le fichier est chargé
