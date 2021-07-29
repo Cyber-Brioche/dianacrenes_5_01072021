@@ -233,3 +233,73 @@ a:active {
   border-radius: 15px 15px 15px 15px;
   width: 100%;
 }
+
+/*----------------------------------------------------------------panier.html--------------------------------------------------------------------------*/
+
+.cart-card__form {
+  background-color: rgba(243, 233, 241);
+  display: flex;
+  margin: 50px 50px 50px 50px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px 20px 20px 20px;
+  flex-direction: column;
+}
+
+.title_delivery {
+  font-family: "OtomanopeeOne";
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+
+.form_first-line,
+.form_second-line {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.name-and-lastname,
+.phone-and-mail,
+.postal-and-city {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.cart-card__form-line {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 30px 10px;
+  width: 100%;
+}
+
+label {
+  font-family: "Roboto";
+}
+
+input {
+  background-color: white;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
+  height: 40px;
+}
+
+.cart-card__form__button {
+  background-color: #b85aff;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 15px 15px 15px 15px;
+  width: 100%;
+}

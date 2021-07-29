@@ -12,15 +12,6 @@ const productCardPrice = document.querySelector(".product-card__infos__price");
 const bearNumber = document.querySelector("#bearNum");
 const colorSelect = document.querySelector("#color-select");
 
-// Demmarage du script
-main();
-
-function main() {
-  checkIf404();
-  getArticles();
-  addToCart();
-}
-
 //vérifié si la page du nounours existe
 function checkIf404() {
   // on ajoute une écoute sur les erreurs qui apparait sur la page
@@ -121,3 +112,12 @@ function addToCart() {
     }
   });
 }
+
+function main() {
+  checkIf404();
+  getArticles();
+  addToCart();
+}
+
+// Demmarage du script
+main();

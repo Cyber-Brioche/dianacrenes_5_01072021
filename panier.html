@@ -6,5 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="//use.fontawesome.com/releases/v5.12.0/css/all.css"
+  />
+  <body>
+    <div>
+      <header class="header_container">
+        <div class="header_logo">
+          <a href="index.html">
+            <img class="logo" src="orinoco.png" alt="logo Orinoco" />
+          </a>
+        </div>
+        <div class="header_icon">
+          <i class="fas fa-user fa-2x icon"></i>
+          <i class="fas fa-shopping-cart fa-2x icon"></i>
+        </div>
+      </header>
+      <div>
+        <div class="cart-card__form">
+          <div class="title_delivery">Votre adresse de livraison</div>
+          <form class="form">
+            <div class="form_first-line">
+              <div class="name-and-lastname">
+                <div class="cart-card__form-line" id="bloc__name">
+                  <label for="name">Prénom :</label>
+                  <input
+                    type="text"
+                    placeholder="Prénom"
+                    id="name"
+                    name="user_name"
+                    required
+                  />
+                </div>
+                <div class="cart-card__form-line" id="bloc__lastname">
+                  <label for="lastname">Nom :</label>
+                  <input
+                    type="text"
+                    placeholder="Nom"
+                    id="lastname"
+                    name="user_lastname"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="phone-and-mail">
+                <div class="cart-card__form-line" id="bloc__phone">
+                  <label for="phone">Numéro de téléphone :</label>
+                  <input
+                    type="tel"
+                    placeholder="Numéro de téléphone"
+                    id="phone"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <div class="cart-card__form-line" id="bloc__mail">
+                  <label for="mail">Adresse mail :</label>
+                  <input
+                    type="email"
+                    placeholder="Adresse mail"
+                    id="mail"
+                    name="user_mail"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form_second-line">
+              <div class="cart-card__form-line" id="bloc__adress">
+                <label for="adress">Adresse :</label>
+                <input
+                  type="text"
+                  placeholder="Adresse de livraison"
+                  id="adress"
+                  name="user_adress"
+                  required
+                />
+              </div>
+              <div class="postal-and-city">
+                <div class="cart-card__form-line" id="bloc__postal">
+                  <label for="postal">Code postal :</label>
+                  <input
+                    type="text"
+                    placeholder="Code postal"
+                    id="postal"
+                    name="user_postal"
+                    required
+                  />
+                </div>
+                <div class="cart-card__form-line" id="bloc__city">
+                  <label for="city">Ville :</label>
+                  <input
+                    type="text"
+                    placeholder="Ville"
+                    id="city"
+                    name="user_city"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="erreur"></div>
+            <div class="cart-card__form__buttons">
+              <button id="submit" class="cart-card__form__button to-pay">
+                Commander
+              </button>
+            </div>
+          </form>
+
+          <div class="added-to-cart-confirmation">
+            <p class="confirmation-text"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_box">
+        <div class="info_box">
+          <div class="tittle_info">Pour mieux nous connaître</div>
+          <div class="info">A propos d'Orinoco</div>
+          <div class="info">Carrière</div>
+          <div class="info">Durabilité</div>
+        </div>
+        <div class="info_box">
+          <div class="tittle_info">Moyens de paiment Orinoco</div>
+          <div class="info">Cartes de paiment</div>
+          <div class="info">Paiment en plusieur fois</div>
+          <div class="info">Chèques-cadeaux</div>
+        </div>
+        <div class="info_box">
+          <div class="tittle_info">Besoin d'aide ?</div>
+          <div class="info">Orinoco et COVID-19</div>
+          <div class="info">Voir ou suivre vos commandes</div>
+          <div class="info">Retour et remplacements</div>
+          <div class="info">Servive client</div>
+          <div class="info">Accessibilité</div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
