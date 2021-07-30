@@ -11,7 +11,6 @@ function displayCart() {
     cartCard.style.display = "flex";
     cartCard.style.flexDirection = "column";
     cartCard.style.justifyContent = "space-around";
-    emptyCart.style.display = "none";
   }
 
   // Pour chaque objet dans le tableau copié du localStorage, on crée les divs de l'affichage du panier et on les remplit avec les données du tableau.
@@ -24,11 +23,11 @@ function displayCart() {
     productRow.appendChild(productName);
     productName.classList.add("cart-card__recap__title");
     productName.innerHTML = copyOfLS[produit].name;
-
+    /*
     let productQuantity = document.createElement("div");
     productRow.appendChild(productQuantity);
     productQuantity.classList.add("cart-card__recap__title", "title-quantity");
-    productQuantity.innerHTML = copyOfLS[produit].quantity;
+    productQuantity.innerHTML = copyOfLS[produit].quantity;*/
 
     let productPrice = document.createElement("div");
     productRow.appendChild(productPrice);
@@ -42,7 +41,7 @@ function displayCart() {
     productPrice.innerHTML = new Intl.NumberFormat("fr-FR", {
       style: "currency",
       currency: "EUR",
-    }).format(copyOfLS[produit].price * copyOfLS[produit].quantity);
+    }).format(copyOfLS[produit].price);
   }
 }
 

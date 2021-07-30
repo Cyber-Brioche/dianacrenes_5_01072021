@@ -234,18 +234,26 @@ a:active {
   width: 100%;
 }
 
+.added-to-cart-confirmation {
+  font-family: "OtomanopeeOne";
+  font-size: 20px;
+}
+
 /*----------------------------------------------------------------panier.html--------------------------------------------------------------------------*/
 
-.cart-card__form {
+.cart-card__form,
+.cart-card {
   background-color: rgba(243, 233, 241);
   display: flex;
   margin: 50px 50px 50px 50px;
   padding: 30px 30px 30px 30px;
   border-radius: 20px 20px 20px 20px;
   flex-direction: column;
+  box-shadow: 2px 2px 20px silver;
 }
 
-.title_delivery {
+.title_delivery,
+.cart {
   font-family: "OtomanopeeOne";
   font-size: 25px;
   padding-bottom: 25px;
@@ -282,7 +290,7 @@ label {
 input {
   background-color: white;
   border: none;
-  color: white;
+  color: black;
   text-align: center;
   text-decoration: none;
   font-size: 16px;
@@ -302,4 +310,68 @@ input {
   font-size: 16px;
   border-radius: 15px 15px 15px 15px;
   width: 100%;
+}
+
+.cart-card__form__button:hover {
+  cursor: pointer;
+}
+.cart-card__recap__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.cart-card__recap__title {
+  font-family: "Roboto";
+  padding: 10px;
+}
+
+.first-line {
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+
+.total {
+  font-family: "Roboto";
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.erreur {
+  font-family: "OtomanopeeOne";
+  font-size: 20px;
+}
+
+/*----------------------------------------------------------------confirmation.html--------------------------------------------------------------------------*/
+
+.recap {
+  background-color: rgba(243, 233, 241);
+  display: flex;
+  margin: 50px 50px 50px 50px;
+  padding: 30px 30px 30px 30px;
+  border-radius: 20px 20px 20px 20px;
+  flex-direction: column;
+  box-shadow: 2px 2px 20px silver;
+}
+
+.confirm {
+  font-family: "OtomanopeeOne";
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+.total_price,
+.order_id {
+  font-family: "Roboto";
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.truck {
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  color: #b85aff;
 }
