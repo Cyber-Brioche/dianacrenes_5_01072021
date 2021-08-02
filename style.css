@@ -123,12 +123,28 @@ a:active {
 
 .product_card {
   background-color: rgba(243, 233, 241);
-  margin: 80px 0px 80px 0px;
+  margin: 80px 10px 80px 0px;
   box-shadow: 2px 2px 20px silver;
   border-radius: 20px 20px 20px 20px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+}
+
+@media all and (max-width: 1120px) {
+  .product_card {
+    display: flex;
+    flex-direction: column;
+  }
+  .img {
+    height: 400px;
+  }
+}
+
+@media all and (min-width: 1121px) {
+  .img {
+    width: 800px;
+  }
 }
 
 .produitNounours__img img {
@@ -157,8 +173,8 @@ a:active {
 }
 
 .img {
+  object-fit: cover;
   background-color: white;
-  width: 800px;
   border-radius: 20px 20px 20px 20px;
   margin: 20px 20px 20px 20px;
 }
